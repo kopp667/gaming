@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeu de Memory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Jeu de Memory 🧠</h1>
+    <div class="stats">
+      <div>⏱️ Temps : <span id="timer">0</span> sec</div>
+      <div>🖱️ Coups : <span id="moves">0</span></div>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="win-message" class="win-message hidden">
+      🎉 Bravo !<br/>
+      Temps : <span id="final-time"></span>s<br/>
+      Coups : <span id="final-moves"></span><br/>
+      <button onclick="restartGame()">Rejouer 🔁</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
